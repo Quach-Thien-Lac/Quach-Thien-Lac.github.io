@@ -20,7 +20,11 @@ function normalizePosts(payload, category) {
     }
 
     if (payload && typeof payload === "object" && Object.keys(payload).length > 0) {
-        return [payload];
+        return Object.entries(payload).map(([id, post]) => ({
+            ...post,
+            id: post.id ?? id,
+            category,
+        }));
     }
 
     return [];
@@ -28,6 +32,7 @@ function normalizePosts(payload, category) {
 
 async function loadCategory(category) {
     try {
+
         const response = await fetch(`./archive/${category}.json`);
         if (!response.ok) {
             return [];
@@ -41,7 +46,7 @@ async function loadCategory(category) {
         const payload = JSON.parse(text);
         return normalizePosts(payload, category).map((post, index) => ({
             ...post,
-            category,
+            category: post.category ?? category,
             id: post.id ?? `${category}-${index}`,
         }));
     } catch (error) {
@@ -169,6 +174,14 @@ function showSelectorForCategory(navCategory) {
 
 document.addEventListener("DOMContentLoaded", () => {
     loadAllPosts();
+
+    const directBack = document.querySelector('#back-button');
+    if (directBack) {
+        directBack.addEventListener('click', () => {
+            document.querySelector('#post-reader')?.classList.add('hidden');
+            document.querySelector('#post-selector')?.classList.remove('hidden');
+        });
+    }
 
     document.addEventListener("click", (event) => {
         const target = event.target;

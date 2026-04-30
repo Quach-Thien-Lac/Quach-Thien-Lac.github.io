@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>deepchilled_coffee</title>
+    <h2 style = "text-align: center; padding: 20px;">deepchilled_coffee</h2>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -26,30 +27,28 @@
         <!--Layout A: Post Selector-->
         <section id="post-selector">
             <div id="hero-container">
-                <div id = "hero-content">
-                <h3 id="hero-title"></h3>
-                <p id="hero-subtitle"></p>
-                <button id="hero-button">Read more</button>
-                </div>
+                    <h4 id="hero-title"></h4>
+                    <p id="hero-subtitle"></p>
+                    <button id="hero-button">Read more</button>
             </div>
 
             <div id="grid-container" class="grid">
                 <div id="post-container" class="grid-item">
-                <div id="post-image"></div>
-                <h4 id="post-title"></h4>
-                <p  id="post-subtitle"></p>
+                    <div id="post-image"></div>
+                    <h4 id="post-title"></h4>
+                    <p id="post-subtitle"></p>
                 </div>
             </div>
         </section>
 
         <!--Layout B: Post Reader-->
         <section id="post-reader" class="hidden">
-            <div id = "reader-container">
-            <button id="back-button">Back</button>
-            <div id="reader-image"></div>
-            <div id="reader-title"></div>
-            <div id="reader-subtitle"></div>
-            <div id="reader-content"></div>
+            <div id="reader-container">
+                <div id="reader-title"></div>
+                <div id="reader-subtitle"></div>
+                <button id="back-button">Back</button>
+                <div id="reader-image"></div>
+                <div id="reader-content"></div>
             </div>
         </section>
     </main>
@@ -58,7 +57,7 @@
             <div class="post-card-title"></div>
             <div class="post-card-subtitle"></div>
         </div>
-        <button class="read-more-button" data-post-id="">Read More</button>
+        <button id="read-more-button" >Read More</button>
     </template>
     <script src="script.js"></script>
 </body>
