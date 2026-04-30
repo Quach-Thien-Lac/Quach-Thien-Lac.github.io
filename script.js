@@ -11,8 +11,6 @@ const postsByCategory = {};
 let allPosts = [];
 let activePosts = [];
 
-// Substack integration removed — no external loading.
-
 function getPostImage(post) {
     return post?.image ?? post?.banner ?? post?.img ?? post?.cover ?? "";
 }
@@ -71,6 +69,39 @@ async function loadAllPosts() {
     document.querySelector('#post-selector')?.classList.remove('hidden');
 }
 
+function createPostCard(post, { empty = false } = {}) {
+    const gridItem = document.createElement("div");
+    gridItem.className = "grid-item";
+
+    const image = document.createElement("div");
+    image.id = "post-image";
+
+    const titleNode = document.createElement("h4");
+    titleNode.id = "post-title";
+
+    const subtitleNode = document.createElement("p");
+    subtitleNode.id = "post-subtitle";
+
+    const readMoreButton = document.createElement("button");
+    readMoreButton.className = "read-more-button";
+    readMoreButton.type = "button";
+    readMoreButton.textContent = empty ? "Read More" : "Read More";
+
+    if (empty) {
+        titleNode.textContent = "No posts yet";
+        subtitleNode.textContent = "Write one now!";
+    } else {
+        const postImage = getPostImage(post);
+        image.style.backgroundImage = postImage ? `url("${postImage}")` : "none";
+        titleNode.textContent = post.title ?? "Untitled post";
+        subtitleNode.textContent = post.subtitle ?? "";
+        readMoreButton.dataset.postId = post.id;
+    }
+
+    gridItem.append(image, titleNode, subtitleNode, readMoreButton);
+    return gridItem;
+}
+
 function renderSelector(posts) {
     const heroPost = posts.length > 0 ? posts[0] : null;
     const gridPosts = posts.length > 1 ? posts.slice(1) : [];
@@ -116,45 +147,12 @@ function renderGrid(posts) {
     container.innerHTML = "";
 
     if (posts.length === 0) {
-        const emptyItem = document.createElement("div");
-        emptyItem.className = "grid-item";
-        emptyItem.innerHTML = `
-            <div id="post-image"></div>
-            <h4 id="post-title">No posts yet</h4>
-            <p id="post-subtitle">Write one now!</p>
-            <button class="read-more-button" type="button">Read More</button>
-        `;
-        container.appendChild(emptyItem);
+        container.appendChild(createPostCard(null, { empty: true }));
         return;
     }
 
     posts.forEach((post) => {
-        const gridItem = document.createElement("div");
-        gridItem.className = "grid-item";
-
-        const image = document.createElement("div");
-        image.id = "post-image";
-
-        const titleNode = document.createElement("h4");
-        titleNode.id = "post-title";
-
-        const subtitleNode = document.createElement("p");
-        subtitleNode.id = "post-subtitle";
-
-        const readMoreButton = document.createElement("button");
-        readMoreButton.className = "read-more-button";
-        readMoreButton.type = "button";
-        readMoreButton.textContent = "Read More";
-
-        const postImage = getPostImage(post);
-        image.style.backgroundImage = postImage ? `url("${postImage}")` : "none";
-
-        titleNode.textContent = post.title ?? "Untitled post";
-        subtitleNode.textContent = post.subtitle ?? "";
-
-        gridItem.append(image, titleNode, subtitleNode, readMoreButton);
-        readMoreButton.dataset.postId = post.id;
-        container.appendChild(gridItem);
+        container.appendChild(createPostCard(post));
     });
 }
 
@@ -172,7 +170,7 @@ function openReader(postId) {
         const image = getPostImage(post);
         if (image) {
             readerImage.src = image;
-            readerImage.alt = post.title ?? "Image goes here";
+            readerImage.alt = post.title ?? "Post image";
         } else {
             readerImage.removeAttribute("src");
             readerImage.alt = "";
@@ -206,12 +204,10 @@ function showSelectorForCategory(navCategory) {
 document.addEventListener("DOMContentLoaded", () => {
     loadAllPosts();
 
-    // Event Delegation handles ALL clicks (Navbar, Back Buttons, Read More)
     document.addEventListener("click", (event) => {
         const target = event.target;
         if (!(target instanceof HTMLElement)) return;
 
-        // 1. Handle Navbar Links
         const navLink = target.closest("a[data-category]");
         if (navLink) {
             event.preventDefault();
@@ -220,23 +216,15 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        // 2. Handle Back Button
         if (target.id === "back-button") {
             document.querySelector("#post-reader")?.classList.add("hidden");
             document.querySelector("#post-selector")?.classList.remove("hidden");
             return;
         }
 
-        // 3. Handle Hero 'Read More' Button
-        if (target.id === "hero-button") {
-            const postId = target.dataset.postId;
-            if (postId) openReader(postId);
-            return;
-        }
-
-        // 4. Handle Grid 'Read More' Buttons
-        if (target.classList.contains("read-more-button")) {
-            const postId = target.dataset.postId;
+        const readMoreButton = target.closest(".read-more-button");
+        if (readMoreButton instanceof HTMLButtonElement) {
+            const postId = readMoreButton.dataset.postId;
             if (postId) openReader(postId);
         }
     });
