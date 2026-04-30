@@ -1,3 +1,4 @@
+const SUBSTACK_NAME = "yourname"; // Replace with your actual Substack publication name
 const categories = ["fiction", "nonfiction", "poetry", "feature"];
 const navToFileMap = {
     fiction: "fiction",
@@ -15,14 +16,8 @@ function getPostImage(post) {
 }
 
 function normalizePosts(payload, category) {
-    if (Array.isArray(payload)) {
-        return payload;
-    }
-
-    if (payload && Array.isArray(payload.posts)) {
-        return payload.posts;
-    }
-
+    if (Array.isArray(payload)) return payload;
+    if (payload && Array.isArray(payload.posts)) return payload.posts;
     if (payload && typeof payload === "object" && Object.keys(payload).length > 0) {
         return Object.entries(payload).map(([id, post]) => ({
             ...post,
@@ -30,22 +25,16 @@ function normalizePosts(payload, category) {
             category,
         }));
     }
-
     return [];
 }
 
 async function loadCategory(category) {
     try {
-
         const response = await fetch(`./archive/${category}.json`);
-        if (!response.ok) {
-            return [];
-        }
-
+        if (!response.ok) return [];
+        
         const text = await response.text();
-        if (!text.trim()) {
-            return [];
-        }
+        if (!text.trim()) return [];
 
         const payload = JSON.parse(text);
         return normalizePosts(payload, category).map((post, index) => ({
@@ -53,20 +42,31 @@ async function loadCategory(category) {
             category: post.category ?? category,
             id: post.id ?? `${category}-${index}`,
         }));
-    } catch (error) {
-        console.error(`Error loading ${category}:`, error);
-        return [];
+    } catch {
+        console.error(`Failed to load category: ${category}`);
+        return []; 
     }
 }
 
 async function loadAllPosts() {
-    const loaded = await Promise.all(categories.map((category) => loadCategory(category)));
+    // 1. Fetch local JSON files and Substack data simultaneously
+    const [localFetches, substackPosts] = await Promise.all([
+        Promise.all(categories.map((category) => loadCategory(category))),
+        loadSubstackPosts()
+    ]);
 
+    // 2. Map local files to their categories
     categories.forEach((category, index) => {
-        postsByCategory[category] = loaded[index];
+        postsByCategory[category] = localFetches[index];
     });
 
-    allPosts = loaded.flat();
+    // 3. Merge Substack posts into the "feature" category
+    if (substackPosts.length > 0) {
+        postsByCategory['feature'] = [...(postsByCategory['feature'] || []), ...substackPosts];
+    }
+
+    // 4. Flatten all posts into the global array and initialize view
+    allPosts = [...localFetches.flat(), ...substackPosts];
     activePosts = postsByCategory.fiction ?? [];
     renderSelector(activePosts);
 }
@@ -85,9 +85,7 @@ function renderHero(post) {
     const heroButton = document.querySelector("#hero-button");
     const heroContainer = document.querySelector("#hero-container");
 
-    if (!heroTitle || !heroSubtitle || !heroButton || !heroContainer) {
-        return;
-    }
+    if (!heroTitle || !heroSubtitle || !heroButton || !heroContainer) return;
 
     if (!post) {
         heroTitle.textContent = "No posts yet";
@@ -113,9 +111,7 @@ function renderGrid(posts) {
     const container = document.querySelector("#grid-container");
     const template = document.getElementById("post-card-template");
 
-    if (!container || !template) {
-        return;
-    }
+    if (!container || !template) return;
 
     container.innerHTML = "";
 
@@ -128,9 +124,6 @@ function renderGrid(posts) {
         if (readMoreButton) {
             readMoreButton.classList.add("read-more-button");
             readMoreButton.dataset.postId = post.id;
-            readMoreButton.addEventListener("click", () => {
-                openReader(post.id);
-            });
         }
 
         container.appendChild(postCard);
@@ -139,11 +132,7 @@ function renderGrid(posts) {
 
 function openReader(postId) {
     const post = allPosts.find((item) => String(item.id) === String(postId));
-
-    if (!post) {
-        console.error("Post not found:", postId);
-        return;
-    }
+    if (!post) return;
 
     const postReader = document.querySelector("#post-reader");
     const readerImage = document.querySelector("#reader-image");
@@ -164,7 +153,8 @@ function openReader(postId) {
 
     if (readerTitle) readerTitle.textContent = post.title ?? "Untitled post";
     if (readerSubtitle) readerSubtitle.textContent = post.subtitle ?? "";
-    if (readerContent) readerContent.textContent = post.content ?? "";
+    
+    if (readerContent) readerContent.innerHTML = post.content ?? "";
 
     document.querySelector("#post-selector")?.classList.add("hidden");
     postReader?.classList.remove("hidden");
@@ -173,7 +163,6 @@ function openReader(postId) {
 function showSelectorForCategory(navCategory) {
     const fileCategory = navToFileMap[navCategory] ?? "fiction";
 
-    // If the user selected the Archive/Features nav, show all posts
     if (navCategory === 'features' || navCategory === 'archive' || navCategory === 'all') {
         activePosts = allPosts ?? [];
     } else {
@@ -189,50 +178,38 @@ function showSelectorForCategory(navCategory) {
 document.addEventListener("DOMContentLoaded", () => {
     loadAllPosts();
 
-    const directBack = document.querySelector('#back-button');
-    if (directBack) {
-        directBack.addEventListener('click', () => {
-            document.querySelector('#post-reader')?.classList.add('hidden');
-            document.querySelector('#post-selector')?.classList.remove('hidden');
-        });
-    }
-
+    // Event Delegation handles ALL clicks (Navbar, Back Buttons, Read More)
     document.addEventListener("click", (event) => {
         const target = event.target;
+        if (!(target instanceof HTMLElement)) return;
 
-        if (!(target instanceof HTMLElement)) {
-            return;
-        }
-
+        // 1. Handle Navbar Links
         const navLink = target.closest("a[data-category]");
         if (navLink) {
             event.preventDefault();
             const navCategory = navLink.dataset.category;
-            if (navCategory) {
-                showSelectorForCategory(navCategory);
-            }
+            if (navCategory) showSelectorForCategory(navCategory);
             return;
         }
 
+        // 2. Handle Back Button
         if (target.id === "back-button") {
             document.querySelector("#post-reader")?.classList.add("hidden");
             document.querySelector("#post-selector")?.classList.remove("hidden");
             return;
         }
 
+        // 3. Handle Hero 'Read More' Button
         if (target.id === "hero-button") {
             const postId = target.dataset.postId;
-            if (postId) {
-                openReader(postId);
-            }
+            if (postId) openReader(postId);
             return;
         }
 
+        // 4. Handle Grid 'Read More' Buttons
         if (target.classList.contains("read-more-button")) {
             const postId = target.dataset.postId;
-            if (postId) {
-                openReader(postId);
-            }
+            if (postId) openReader(postId);
         }
     });
 });
