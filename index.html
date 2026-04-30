@@ -1,34 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>deepchilled_coffee</title>
-    <link rel = "stylesheet" href = "style.css"> 
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="logo"><img src = "https://substackcdn.com/image/fetch/$s_!dxH7!,w_80,h_80,c_fill,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8395a315-d998-4553-8b31-c65d73040d9a_372x372.png"alt = "logo" /> </div>
+    <!-- Constant navbar-->
+    <header>
+        <nav id="navbar">
+            <div class="navlinks">
+                <a href="#">Fiction</a>
+                <a href="#">Nonfiction</a>
+                <a href="#">Poetry</a>
+                <a href="#">Archive</a>
+            </div>
+        </nav>
+    </header>
+    <!--Main content-->
 
-        <div class = "nav-links">
-            <a href = "#">Home</a>
-            <a href = "#">Fiction</a>
-            <a href = "#">Non-Fiction</a>
-            <a href = "#">Poetry</a>
-            <a href = "#">Archive</a>
+    <main id="content">
+        <!--Layout A: Post Selector-->
+        <section id="post-selector">
+            <div id="hero-section">
+                <div id="hero-title">
+
+                </div>
+                <div id="hero-subtitle">
+
+                </div>
+            </div>
+
+            <div id="post-grid" class="grid">
+            </div>
+            </div>
+        </section>
+        <!--Layout B: Post Reader-->
+        <section id="post-reader" class="hidden">
+            <button id="back-button">Back</button>
+            <div id="post-title"></div>
+            <div id="post-subtitle"></div>
+            <div id="post-content"></div>
+        </section>
+    </main>
+    <template id="post-card-template">
+        <div class="post-card">
+            <div class="post-card-title"></div>
+            <div class="post-card-subtitle"></div>
         </div>
-    </nav>
-
-    <section class = "hero">
-        <div class = "hero-ovelay"></div>
-        <div class = "hero-title"><p><strong>Title</strong></p></div>
-        <div class = "hero-subtitle"><p>Subtitle</p></div>
-    </section>
-
-    <section class = "commoner">
-        <div class = "commoner-ovelay"></div>
-        <div class = "commoner-title"><p><strong>Title</strong></p></div>
-        <div class = "commoner-subtitle"><p>Subtitle</p></div>
-    </section>
+        <button class="read-more-button" data-post-id="">Read More</button>
+    </template>
+    <script src="script.js"></script>
 </body>
+
 </html>
