@@ -171,11 +171,11 @@ function openReader(postId) {
     if (readerImage) {
         const image = getPostImage(post);
         if (image) {
-            readerImage.style.backgroundImage = `url("${image}")`;
-            readerImage.style.minHeight = "260px";
+            readerImage.src = image;
+            readerImage.alt = post.title ?? "Image goes here";
         } else {
-            readerImage.style.backgroundImage = "none";
-            readerImage.style.minHeight = "0";
+            readerImage.removeAttribute("src");
+            readerImage.alt = "";
         }
     }
 
