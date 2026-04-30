@@ -30,8 +30,12 @@ h1 {
     color: inherit;
 }
 
+p {
+    text-indent: 0;
+}
+
 p + p {
-    margin-top: 1em;
+    margin-top: 3em;
 }
 
 #navbar {
@@ -88,11 +92,13 @@ p + p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 8px;
 
     width: 60%;
     max-width: 1200px;
-    height: 50%;
+    height: 50vh;
     margin-top: 2.5rem;
+    margin-bottom: 4rem;
     margin-left: auto;
     margin-right: auto;
 
@@ -113,10 +119,11 @@ p + p {
 
 #hero-image{
     width: 60%;
-    height: 100%;
+    height: 60vh;
     object-fit: cover;
     object-position: center;
     overflow: hidden;
+    border-radius: 8px;
 }
 
 
@@ -130,6 +137,7 @@ p + p {
     font-size: 1.2em;
     margin-bottom: 1rem;
     font-family: var(--font-secondary);
+    font-style: italic;
 }
 
 #hero-content {
@@ -144,6 +152,8 @@ p + p {
     border: 2px solid var(--accent-color);
 
     padding: 8px 8px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 
     font-size: 1em;
     font-family: var(--font-secondary);
@@ -207,29 +217,36 @@ p + p {
 }
 
 #post-reader {
-    max-width: 800px;
-    margin: 40px auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
     padding: 0 20px;
-    display: block flow;
+    display: block;
     text-align: left;
 }
 
 #reader-container {
     background-color: var(--bg-post);
+
     padding: 20px;
     border-radius: 8px;
-    display: block flow;
-    align-items: left;
-    justify-content: left;
+    gap: 1rem;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    display: block;
 }
 
 #reader-image {
     width: 100%;
     height: 100vh;
-    overflow: hidden;
-    object-fit: cover;
-    object-position: center;
     margin-bottom: 20px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #reader-title {
@@ -237,20 +254,23 @@ p + p {
     font-weight: bold;
     margin-bottom: 0.5rem;
     font-family: var(--font-primary);
+    text-align: center;
 }
 
 #reader-subtitle {
     font-size: 1.25em;
     margin-bottom: 1rem;
     font-family: var(--font-secondary);
+    font-style: italic;
+    text-align: center;
 }
 
 #reader-content {
-    font-size: 1em;
-    line-height: 1.8;
+    font-size: 1.25em;
+    line-height: 2;
     font-family: var(--font-secondary);
     white-space: pre-wrap;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .hidden {

@@ -10,6 +10,10 @@ const postsByCategory = {};
 let allPosts = [];
 let activePosts = [];
 
+function getPostImage(post) {
+    return post?.image ?? post?.banner ?? post?.img ?? post?.cover ?? "";
+}
+
 function normalizePosts(payload, category) {
     if (Array.isArray(payload)) {
         return payload;
@@ -99,7 +103,7 @@ function renderHero(post) {
     heroButton.classList.remove("hidden");
     heroButton.dataset.postId = post.id;
 
-    const image = post.image ?? post.banner ?? "";
+    const image = getPostImage(post);
     heroContainer.style.backgroundImage = image
         ? `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("${image}")`
         : "linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55))";
@@ -120,11 +124,14 @@ function renderGrid(posts) {
         postCard.querySelector(".post-card-title").textContent = post.title ?? "Untitled post";
         postCard.querySelector(".post-card-subtitle").textContent = post.subtitle ?? "";
 
-        const readMoreButton = postCard.querySelector(".read-more-button");
-        readMoreButton.dataset.postId = post.id;
-        readMoreButton.addEventListener("click", () => {
-            openReader(post.id);
-        });
+        const readMoreButton = postCard.querySelector(".read-more-button") ?? postCard.querySelector("#read-more-button");
+        if (readMoreButton) {
+            readMoreButton.classList.add("read-more-button");
+            readMoreButton.dataset.postId = post.id;
+            readMoreButton.addEventListener("click", () => {
+                openReader(post.id);
+            });
+        }
 
         container.appendChild(postCard);
     });
@@ -138,17 +145,17 @@ function openReader(postId) {
         return;
     }
 
+    const postReader = document.querySelector("#post-reader");
     const readerImage = document.querySelector("#reader-image");
     const readerTitle = document.querySelector("#reader-title");
     const readerSubtitle = document.querySelector("#reader-subtitle");
     const readerContent = document.querySelector("#reader-content");
 
     if (readerImage) {
-        if (post.image) {
-            readerImage.style.backgroundImage = `url("${post.image}")`;
+        const image = getPostImage(post);
+        if (image) {
+            readerImage.style.backgroundImage = `url("${image}")`;
             readerImage.style.minHeight = "260px";
-            readerImage.style.backgroundSize = "cover";
-            readerImage.style.backgroundPosition = "center";
         } else {
             readerImage.style.backgroundImage = "none";
             readerImage.style.minHeight = "0";
@@ -160,12 +167,19 @@ function openReader(postId) {
     if (readerContent) readerContent.textContent = post.content ?? "";
 
     document.querySelector("#post-selector")?.classList.add("hidden");
-    document.querySelector("#post-reader")?.classList.remove("hidden");
+    postReader?.classList.remove("hidden");
 }
 
 function showSelectorForCategory(navCategory) {
     const fileCategory = navToFileMap[navCategory] ?? "fiction";
-    activePosts = postsByCategory[fileCategory] ?? [];
+
+    // If the user selected the Archive/Features nav, show all posts
+    if (navCategory === 'features' || navCategory === 'archive' || navCategory === 'all') {
+        activePosts = allPosts ?? [];
+    } else {
+        activePosts = postsByCategory[fileCategory] ?? [];
+    }
+
     renderSelector(activePosts);
 
     document.querySelector("#post-reader")?.classList.add("hidden");
