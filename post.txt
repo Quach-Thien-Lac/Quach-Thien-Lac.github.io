@@ -1,60 +1,103 @@
 fiction
-title: Chó săn, Thỏ đế, Cáo già
-subtitle: truyện ngắn đầu tay
-image: ./imgs/cho-san.webp
-content: Quỳnh thấy như đang chết chìm trong cái ngột ngạt sặc mùi mồ hôi mà nắng trưa tháng tư đang đun cho nóng thêm; nàng đưa tay áo lên lau trán và gượng một nụ cười với cô gái vừa bước vào lớp.
-“Bình tĩnh chưa? Nực vậy không chịu đi rửa mặt.” Vừa ngồi xuống, cô gái đã mở lời.
-“...Ngân, tui xin lỗi, hồi nãy...” Quỳnh ngập ngừng.
-“Không sao.” Ngân liếc cái đồng hồ treo tường sau lưng. “Đúng hai tuần trước mày nói tao thằng Quang nuốt tờ phao khi bị mày chất vấn. Mày nói nó hoảng quá nên làm liểu phải không?” Ngân đợi cái gật đầu từ nàng rồi liếc xuống bàn. “Nếu đã hoảng tới mức đó thì càng có lí do cho thấy nó là đứa đã làm vụ này.”
-Đang được phóng to hết cỡ trên cái điện thoại, “vụ này” là hình một miếng giấy nhăn nhúm, chi chít chữ và số đặt trên bàn học. Dòng tin nhắn kèm theo: “Hôm qua trực nhật thấy cái này trong hộc bàn con Quỳnh.”
-“Phải, phải, bà nói đúng, chỉ có nó. Sau bữa kiểm tra, bữa nó nuốt phao đó, cô than điểm thấp nên bắt kiểm tập nguyên lớp, nhớ không, nó là thằng mượn tập tui rồi lỡ đưa cho bà kiểm đó. Nó chụp chữ tui lại rồi về nhà học cách viết.” Quỳnh bặm môi; với nàng bây giờ, chuyện gì cũng có thể.
-“Tui phải theo vụ này tới cùng.” Nàng nói đè lên tiếng thở dài của Ngân. “Đây là lần cuối, tui hứa.”
-“Đây là lần thứ năm mày nói câu này rồi. Lần thứ năm! Nhưng vụ này không giống những vụ trước, Quỳnh à. Tao, mày, không ai có bằng chứng cho chuyện này. Với lại, cái thằng nhát như thỏ đế đó trước giờ mở miệng không nói chuyện học thì cũng chuyện thi. Mày nghĩ bao nhiêu đứa tin mày nếu lớn chuyện, ngoài tao?”
-“Tui... sẽ có cách...”
-“Cách gì? Bắt đầu từ đâu? Mày với nó không chung tổ, suốt ba năm không nói chuyện với nó quá mười câu, mày còn không biết bạn nó có bao nhiêu đứa. Tao làm bạn với mày từ lúc mới vô trường, có chỗ nào tao bỏ sót không?”
-“...” Lời phân bua tiếp theo kẹt trong cổ họng Quỳnh không phải vì bí ý mà vì tức. Rốt cuộc con nhỏ này phe nào vậy? Nhưng nhỏ nói cũng không sai. Suy cho cùng thì nàng cũng chẳng biết nên bắt đầu cái công việc thám tử này từ đâu. Đang nghĩ nát óc thì Ngân tiếp tục.
-“Thử hình dung nhé. Giả dụ mày méc cô chuyện nó coi phao với bằng chứng duy nhất là uy tín của chính mày. Trường hợp tốt nhất, đó chỉ là hiểu lầm không đáng có; trường hợp xấu nhất, Lớp phó học tập lớp 12B, Phó Bí thư Đoàn trường lại mang tiếng vu khống cho bạn bè...”
-“Bạn bè! Ra trường tới nơi rồi, có ghét tui thì tụi nó làm được gì? Bà kêu tui trơ con mắt đứng nhìn nó được mười điểm nhờ gian lận hả? Vậy trường này còn nội quy làm gì nữa? Để chưng hả?”
-Quỳnh tuôn ra một tràng rồi im bặt. Phía bên kia bàn, Ngân phóng mắt ra cửa sổ, dường như chẳng để tâm tới những gì nàng vừa trút ra. Ngoài kia, mấy cây phượng vừa nở hoa đang cắt nắng trưa chiếu vào lớp thành những vệt sáng không rõ hình thù.
-“Nhưng mà, căn cứ theo những gì thằng Quang có thì mày mới là người vi phạm nội quy chứ nhỉ?” vẫn nhìn ra ngoài, Ngân nhịp tay lên cái màn hình điện thoại, làm nó sáng lên trở lại. “Mày có thấy lạ không?”
-“Đã nói là...” Quỳnh buột miệng trước câu hỏi không đâu vô đâu.
-“Tại sao nó đợi mày đi kiếm bằng chứng minh oan cho mình nhỉ? Tại sao khi tìm thấy miếng giấy, nó không đưa thẳng cho cô, mà phải gửi cho tao, kêu tao nói lại cho mày? Không... Người bình thường không ai làm vậy. Chỉ có...” Khóe môi cô cong lên vừa đủ để phá vỡ mấy giọt mồ hôi vừa đọng lại.
-“Tối hậu thư. Đây là, nói sao nhỉ, lá bùa hộ mệnh, không, là cây kiếm nó kề vô cổ mày, để cảnh cáo mày sẽ lãnh đủ những gì nó đáng phải lãnh nếu mày tiếp tục. Ẩn dụ hay không?” Nói xong, cô khoanh tay ngả người lên lưng ghế, miệng cười tự đắc như một đứa nhỏ biết được bí mật động trời của bạn nó.
-“Kể...kể cả vậy tui cũng không bỏ cuộc, không bao giờ! Nếu ý định của nó là đe dọa tui thì tội nó càng nặng thêm thôi!” Quỳnh chồm dậy, gần như hét lên, trước khi bắt gặp ánh mắt bình thản của Ngân đang xoáy sâu vào ngực.
-“Mình lại vậy nữa rồi,” nàng sụp xuống, nhìn hai nắm đấm đang run rẩy của mình, và nghĩ.
-Trong không gian nặng trịch chỉ nghe tiếng thở của hai người.
-Từ lúc nào không hay, Quỳnh nhận ra mình đang đắm chìm trong một cuộc săn nhân danh công lý. Luôn kiếm cho ra và kỉ luật mọi học sinh vi phạm nội quy trường, từ một câu nói tục tới một con điểm mười gian lận, từ lứa mới vào trường tới đàn chị sắp tốt nghiệp, chưa bao giờ dừng lại vì những thứ lí do biện hộ gọi là “nể nang” hay “hoàn cảnh.” Cuộc săn đã biến nàng thành một phó Bí thư đoàn trường xuất sắc, một tấm gương thi đua mẫu mực, một lớp phó học tập hoàn hảo, và trên cả, một đứa con gái bên ngoài lịch thiệp, nghiêm trang, hòa đồng nhưng bên trong gắt gỏng, cứng nhắc, ít bạn nhiều thù.
-Nhưng khổ thay, nàng có muốn cũng không dừng được! Mỗi lần nhìn kẻ có lỗi viết tường trình hay bị giáo viên chủ nhiệm của chúng nạt nộ trước lớp, ngực nàng lại xốn xang một niềm tự hào trẻ con rằng: nàng tốt hơn chúng. Cảm giác thượng đẳng nhỏ nhen ấy thúc nàng lao tới, lao tới những con mồi khả dĩ tiếp theo, không chút ngơi nghỉ. Cho đến ngày hôm nay, nàng đột nhiên trở thành con chó què co rúm trong góc tường, chết dí dưới tay một tên điên tới nỗi ăn luôn chứng cứ phạm tội duy nhất và làm giả cái khác để vu khống cho nàng...
-“Nè.”
-Quỳnh giật mình vì hơi ấm từ tay Ngân ôm trọn mu bàn tay mình. Một cách chậm rãi, Ngân duỗi từng ngón tay của nàng ra; ở nơi móng tay bấu vào lòng bàn tay đã bắt đầu tứa máu. “Không đáng đâu.”
-“Nhưng mà...”
-“Hay là mày muốn ba mày bị mời lên trao đổi nếu kế hoạch của mày thất bại?” Ngân quệt hết máu trên tay Quỳnh đi. Nỗ lực phản kháng cuối cùng của nàng bị dập tắt ngay lập tức khi nghe đến từ “ba.” Nếu phải tới nước đó thì nàng thà chết trong góc tường còn hơn.
-“Không có ý gì nhưng mà, làm con giáo viên khổ quá ha? Lúc nào cũng phải như cái tượng đài trong mắt ổng. Tháng trước mày kể mày tuột hạng là ổng cắt tiền xài vặt của mày hả? Thử nghĩ mày bị hạ hạnh kiểm thì ổng còn làm gì nữa. ” Hết lau máu, Ngân vuốt lại tóc bết lên mặt, lên cổ Quỳnh. Nhìn cô như một người mẹ chăm con bị bệnh.
-“Không có con thỏ nào đáng để đánh cược cả thanh xuân đâu. Hứa, không, thề với tao, trên danh nghĩa chị em, đây là lần cuối cùng mày làm chuyện này. Không còn ‘vụ cuối’ nữa. ”
-Gió luồn qua cánh cửa lá nhôm rỉ sét, làm những bóng lá kỳ dị in trên bàn khẽ lay động.
-“...ui thề.” Quỳnh lí nhí trong miệng.
-“Nói lại. Tao chưa nghe.”
-“Tui thề!”
-Kết thúc rồi. Quỳnh nhắm mắt lại; nàng không cảm thấy gì ngoài hai bàn tay đẫm mồ hôi đang miết lên gò má. Lòng nàng bỗng nhẹ hẳn đi, như thể sợi xích giữa nó với tấm thân đang chìm trong cái nóng đến bức thở vừa đứt ra. “Cảm...”
-Có tiếng bước chân từ hành lang. Ngân nhẹ nhàng thả tay để tắt màn hình điện thoại.
-“Ủa, Ngân sao vô sớm vầy nè? Bữa nay tới tui trực nhật mà? Có chuyện gì không?”
-“Không có, không có! Tranh thủ mấy tháng cuối chị em tao nói chuyện cho đã!” Ngân niềm nở.
+title: Moonshine
+subtitle: engflash #3
+image: ./imgs/moonshine.webp
+content: “Taxiturn. Don’t get it?” I pause, finishing my beer, but not my wacky, broken-record joke. “Y’see,...”
 
-“Bài này Quang làm đúng rồi, nhưng mấy đứa khoan chép vô, để cô trình bày lại cho đàng hoàng. Bình thường con làm gọn lắm mà, sao bữa nay bài dễ mà giải luộm thuộm vậy?”
-“D...dạ, nay con hơi mệt.” Cậu học sinh tên Quang ấp úng. Ánh đèn huỳnh quang của lớp học thêm càng làm cho đôi quầng thâm nơi đuôi mắt cậu thêm rõ nét. Quay về bàn học, việc đầu tiên cậu làm là mở điện thoại lên kiểm tra tin nhắn.
-“Ê, đừng có rung đùi nữa, mày đang gác chân lên ghế tao đó... Ê, nghe không vậy, thằng lỗ tai cây?” Tiếng quát tháo của thằng bàn trên không lọt nổi vào tâm trí Quang lúc này. “Nó hẹn bảy giờ rưỡi sẽ nhắn mình mà...” Vừa lúc cậu nghĩ đến trường hợp xấu nhất thì điện thoại trong tay rung lên.
-Có tin nhắn.
-“Nó không theo dõi hay lục cặp mày nữa đâu.”
-“Cảm ơn bà nhiều lắm.” Rồi chực nhớ ra, cậu thêm vào: “Còn câu hỏi hôm bữa bà nghĩ ra chưa?” Cậu được giúp với điều kiện phải thề mình sẽ trả lời thành thật một câu hỏi bất kì người ấy đưa ra. Lạ đời thật, Quang nghĩ, nhưng cô bạn đó có bao giờ bình thường đâu.
-“Mày tính làm gì với tiền học bổng?”
-Quang gãi đầu và cười thầm. Chưa tới hai ngày tính từ lúc nghe cậu kể đầu đuôi câu chuyện mà người ta đã đi guốc trong bụng rồi. Cậu hỏi lại để chắc chắn rằng cô bạn không nghe chuyện này từ ai khác: “Sao bà biết?”
-Tin nhắn trả lời tới nhanh và liên tục.
-“Lúc mày kể tao đã thấy lạ, sức học mày có quên học bài thì cũng chắc ăn trên trung bình, mắc gì phải phao để lấy trọn mười điểm? Không giống cái tính thỏ đế của mày.”
-“Rồi tao nhớ ra đầu năm cô chủ nhiệm thông báo học bổng học kì nhờ hội phụ huynh trợ cấp nên tăng gấp ba. Mà học bổng chỉ trao cho hạng nhất lớp.”
-“Tới lúc con thỏ đế phải liều nhỉ?”
-“Cho mày hai phút để trả lời, không ngày mai đoạn ghi âm tới tay Ban giám hiệu.”
-Làm gì có chuyện con cáo già này không đâu lại đề nghị giúp đỡ cậu. Lúc biết cô ta lén ghi âm mọi chuyện cậu nói từ đầu tới cuối, Quang còn tưởng mình bị gài. Có chửi cậu ngu cũng không sai. Hít một hơi thật sâu để bình tĩnh lại, Quang gõ lên màn hình điện thoại dự định đơn giản vốn đã nằm sẵn trong đầu trước cả khi cậu nhận ra, sau mười hai năm đèn sách, lần đầu mình nhớ lộn ngày kiểm tra.
-“Sắp vô mùa mưa nên tôi mua cho mẹ với thằng em tôi cái áo mưa đàng hoàng, áo ấm luôn. Còn dư nhiêu tôi đưa mẹ hết.” Ngực cậu thắt lại khi nghĩ tới cảnh những nếp nhăn trên khuôn mặt sạm nắng của mẹ dãn ra nhường chỗ cho một nụ cười hiếm hoi, và cảnh thằng em chạy nhảy tưng tưng vì lần đầu được tặng quà sinh nhật. Cô ta nói đúng thật; để được thấy những cảnh ấy, có con thỏ nào không dám liều!
-Tiếng giảng bài của cô giáo hòa dần vào tiếng tích tắc của đồng hồ trong lúc Quang đợi hồi âm. Ngẫm lại, cậu chẳng hiểu nổi cô, người từ câu chuyện của cậu đã vạch ra một kế hoạch tinh vi để đánh lừa bạn thân nhất của mình trong khi luôn miệng nhắc lại rằng: “Tao làm việc này vì nó chứ không phải mày.” Cậu càng chẳng hiểu nổi mình, kẻ đã nhắm mắt làm theo cái kế hoạch điên rồ đó.
-Điện thoại lại rung lên; cậu nhìn, trên đó là ảnh chụp màn hình xác nhận đã xóa “Đoạn ghi âm_240408_131502 – Chứng cứ” cùng dòng tin nhắn: “Nào mua áo thì chụp tao coi.”
-Có lẽ cậu chưa từng và sẽ không bao giờ biết cô nghĩ gì, nhưng Quang coi cô như một thính giả, luôn thấy được toàn cảnh của vở kịch mà cậu lẫn Quỳnh – những diễn viên chết vai – không thể nào thấy. Nếu có một điều Quang có thể tự tin tuyên bố, đó là cậu chưa bao giờ hối hận vì đã bầu Ngân làm lớp trưởng lớp 12B.
+“Oh, I do.” The Asian chick next to me stands. “I may need to see one of you soon.” She replies in near-perfect English.
+
+“Better discuss the price now, then. Need help with that suitcase?”
+
+“The grey Civic, I assume?" She stood, leaving the humongous suitcase by my side. "As for the pay, you shall know once I get there.”
+
+-0-
+
+Getaway driving is a straightforward job. You receive the time and location, drive them to the destination, and get your cut of whatever dirty deeds you helped them get their asses out from. Questions can bury a nine-millimeter in your brain once they step out of the car.
+
+“... Sorry.”
+
+Doesn’t mean questions wouldn’t arise, though.
+
+“’Tis fine. Any human would have thought I was mendacious and resorted to... such a course of action as yours.”
+
+Especially when “Mr. Huang and his pet fox” turned out to be a petite with luggage half her size.
+
+“That explains not ripping off my throat?”
+
+No question, indeed; once the neon lights of the city gave way to the full moon, survival was a gurgling beg for mercy with her canines sinking into your neck, a payback for having pressed your .38 against hers’.
+
+“Heh. More a timely save from this gentleman.” There is a small thud against the corpse lying on the car floor. “Had he not threatened to chop off my tails, his neck wouldn’t be half as delicious as yours’. Better thank him properly.”
+
+“My deepest gratitude to you, kind miss.” The lack of response makes me awkwardly patched in another “sorry,” the third time I tried to smooth out the situation.
+
+“Enough with the palliatives.” The mellifluous voice behind me tints of mockery. “Out of one-liners for socializing, Mr. Taxiturn?”
+
+“Don’t really need ‘em, actually. Better shut my trap and endure a bit of curiosity than opening another asshole on my head.”
+
+Silence, then a pair of cresents glistens through the rearview mirror.
+
+“Isn’t this curiosity too great to bear, though?” She grins. “Talk, or risk my fractiousness.”
+
+I sigh. Not knowing what “fractiousness” even means, I decide not to risk becoming another body on its way to the landfill.
+
+“Weren’t you some kind of… wanderer or something? Why not lay low and avoid the Triads?”
+
+Through the mirror, I see the fox in question turns to the window. Moonlight streaks down her neck, pooling up behind the collarbones.
+
+“I needed to find a friend. One of my kind.” Her gaze flicks back to me. “And the word is ‘wanderlust’.”
+
+“There’re two of you? ...What’s funny?”
+
+“Ah-ha-ha! Who do you humans think had reigned over these forests before you razed them to the ground and built your unsightly temples in their stead?”
+
+“Going hobo ‘cause the Lord took over your business?” Before I can worry about being bled to death for my untimely joke, she answers.
+
+“Heh, but no. It was my decision to leave.”
+
+“Why?” My retort comes immediately. A worshipped existence with every wish catered for by the blindly devouted? I would trade my right arm for that.
+
+“You should not.” In the dark, the amber eyes seem to burn holes into my seat. “Power is the throne you are chained to.”
+
+“Did you just read my mind? And what was that Plato shit supposed to mean anyway?”
+
+“I guess you do suffer from a paucity of wisdom, after all. Such is the nature of the immature.” She sighs and flops down the seats. “Tell me, what does this job bring you?”
+
+“Huh?” The surprise question takes me a while to reply. “Booze, bitches, adrenaline. I could go on.”
+
+“All that boon, hmm?” She asks. “At what cost?”
+
+The shadows of pine trees spill onto the asphalt, lining the poorly-lit highway with grotesque pagoda-like silhouettes. My first time seeing one was on a tattered brochure advertizing Kyoto summer trips on Dad’s working desk way back when.
+
+“…That city’s the back of my hand. Spent my whole life learning every sideroad, every parts dealer, every safe house. Can’t do that again elsewhere...” I trail off. The throne you are chained to, eh?
+
+“Once, there was a maiden, who became wise enough to realize she outlived everything around her. And once they realized it too, her likeness were crafted, built, and burned, again and again for millennia." The fox's voice cracks a little, and she pauses. "She wanted retirement from godhood, but was unfortunately blinded by its radiance. Of her kin, she was the last to realize the fallacy of her existence. That she was no more than a rock her worshippers deemed divine. Do you know what she did after that?”
+
+Without understanding half of what she just said, I reply with a “What?”
+
+She chuckles.
+
+“She tried to live dangerously.”
+
+-0-
+
+“Nice doin’ business with ye, mate.” The old man’s smile is filled with crooked teeth. He slaps the side of the industrial-grade garbage shredder. “Five minutes and them boys'll be no different from Campbells.”
+
+“Mhmm.” I nod and leave. Isn’t long before his call turns my head.
+
+“Haven’t seen that chink ‘round.” He says. “What’s the goin’ rate?”
+
+“Watch y’mouth. She’s a business acquaintance.”
+
+Ignoring the man, I reach for the car, at the same time as her on the other side.
+
+“Business?” She giggles.
+
+“We’re chasing after your pal to Vegas. Know how much the gas’ gonna cost?”
+
+“Certainly not as much as having a fair maiden riding shotgun.”
+
+"Is this your idea of pay?"
+
+I laugh in defeat and turn the key. Something in me changed tonight, transmuted, like the maiden beside me when she leaped from my throat to the dumbstruck gangster whose cleaver went frozen in his hand, her nine tails floating behind like fiery blossom petals. And it makes me want to live dangerously.	
+
+
