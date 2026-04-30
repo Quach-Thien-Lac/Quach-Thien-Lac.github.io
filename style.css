@@ -243,7 +243,7 @@ p + p {
 }
 
 #reader-container {
-    background-color: var(--bg-post);
+    background-color: transparent;
 
     padding: 20px;
     border-radius: 8px;

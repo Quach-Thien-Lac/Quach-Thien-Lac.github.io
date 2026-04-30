@@ -62,7 +62,6 @@ async function loadAllPosts() {
     try {
         window.debugPosts = allPosts;
     } catch (e) {
-        // window may be undefined in some test environments
     }
 
     document.querySelector('#post-reader')?.classList.add('hidden');

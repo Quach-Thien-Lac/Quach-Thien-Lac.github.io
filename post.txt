@@ -1,103 +1,15 @@
-fiction
-title: Moonshine
-subtitle: engflash #3
-image: ./imgs/moonshine.webp
-content: “Taxiturn. Don’t get it?” I pause, finishing my beer, but not my wacky, broken-record joke. “Y’see,...”
-
-“Oh, I do.” The Asian chick next to me stands. “I may need to see one of you soon.” She replies in near-perfect English.
-
-“Better discuss the price now, then. Need help with that suitcase?”
-
-“The grey Civic, I assume?" She stood, leaving the humongous suitcase by my side. "As for the pay, you shall know once I get there.”
-
--0-
-
-Getaway driving is a straightforward job. You receive the time and location, drive them to the destination, and get your cut of whatever dirty deeds you helped them get their asses out from. Questions can bury a nine-millimeter in your brain once they step out of the car.
-
-“... Sorry.”
-
-Doesn’t mean questions wouldn’t arise, though.
-
-“’Tis fine. Any human would have thought I was mendacious and resorted to... such a course of action as yours.”
-
-Especially when “Mr. Huang and his pet fox” turned out to be a petite with luggage half her size.
-
-“That explains not ripping off my throat?”
-
-No question, indeed; once the neon lights of the city gave way to the full moon, survival was a gurgling beg for mercy with her canines sinking into your neck, a payback for having pressed your .38 against hers’.
-
-“Heh. More a timely save from this gentleman.” There is a small thud against the corpse lying on the car floor. “Had he not threatened to chop off my tails, his neck wouldn’t be half as delicious as yours’. Better thank him properly.”
-
-“My deepest gratitude to you, kind miss.” The lack of response makes me awkwardly patched in another “sorry,” the third time I tried to smooth out the situation.
-
-“Enough with the palliatives.” The mellifluous voice behind me tints of mockery. “Out of one-liners for socializing, Mr. Taxiturn?”
-
-“Don’t really need ‘em, actually. Better shut my trap and endure a bit of curiosity than opening another asshole on my head.”
-
-Silence, then a pair of cresents glistens through the rearview mirror.
-
-“Isn’t this curiosity too great to bear, though?” She grins. “Talk, or risk my fractiousness.”
-
-I sigh. Not knowing what “fractiousness” even means, I decide not to risk becoming another body on its way to the landfill.
-
-“Weren’t you some kind of… wanderer or something? Why not lay low and avoid the Triads?”
-
-Through the mirror, I see the fox in question turns to the window. Moonlight streaks down her neck, pooling up behind the collarbones.
-
-“I needed to find a friend. One of my kind.” Her gaze flicks back to me. “And the word is ‘wanderlust’.”
-
-“There’re two of you? ...What’s funny?”
-
-“Ah-ha-ha! Who do you humans think had reigned over these forests before you razed them to the ground and built your unsightly temples in their stead?”
-
-“Going hobo ‘cause the Lord took over your business?” Before I can worry about being bled to death for my untimely joke, she answers.
-
-“Heh, but no. It was my decision to leave.”
-
-“Why?” My retort comes immediately. A worshipped existence with every wish catered for by the blindly devouted? I would trade my right arm for that.
-
-“You should not.” In the dark, the amber eyes seem to burn holes into my seat. “Power is the throne you are chained to.”
-
-“Did you just read my mind? And what was that Plato shit supposed to mean anyway?”
-
-“I guess you do suffer from a paucity of wisdom, after all. Such is the nature of the immature.” She sighs and flops down the seats. “Tell me, what does this job bring you?”
-
-“Huh?” The surprise question takes me a while to reply. “Booze, bitches, adrenaline. I could go on.”
-
-“All that boon, hmm?” She asks. “At what cost?”
-
-The shadows of pine trees spill onto the asphalt, lining the poorly-lit highway with grotesque pagoda-like silhouettes. My first time seeing one was on a tattered brochure advertizing Kyoto summer trips on Dad’s working desk way back when.
-
-“…That city’s the back of my hand. Spent my whole life learning every sideroad, every parts dealer, every safe house. Can’t do that again elsewhere...” I trail off. The throne you are chained to, eh?
-
-“Once, there was a maiden, who became wise enough to realize she outlived everything around her. And once they realized it too, her likeness were crafted, built, and burned, again and again for millennia." The fox's voice cracks a little, and she pauses. "She wanted retirement from godhood, but was unfortunately blinded by its radiance. Of her kin, she was the last to realize the fallacy of her existence. That she was no more than a rock her worshippers deemed divine. Do you know what she did after that?”
-
-Without understanding half of what she just said, I reply with a “What?”
-
-She chuckles.
-
-“She tried to live dangerously.”
-
--0-
-
-“Nice doin’ business with ye, mate.” The old man’s smile is filled with crooked teeth. He slaps the side of the industrial-grade garbage shredder. “Five minutes and them boys'll be no different from Campbells.”
-
-“Mhmm.” I nod and leave. Isn’t long before his call turns my head.
-
-“Haven’t seen that chink ‘round.” He says. “What’s the goin’ rate?”
-
-“Watch y’mouth. She’s a business acquaintance.”
-
-Ignoring the man, I reach for the car, at the same time as her on the other side.
-
-“Business?” She giggles.
-
-“We’re chasing after your pal to Vegas. Know how much the gas’ gonna cost?”
-
-“Certainly not as much as having a fair maiden riding shotgun.”
-
-"Is this your idea of pay?"
-
-I laugh in defeat and turn the key. Something in me changed tonight, transmuted, like the maiden beside me when she leaped from my throat to the dumbstruck gangster whose cleaver went frozen in his hand, her nine tails floating behind like fiery blossom petals. And it makes me want to live dangerously.	
-
-
+nonfiction
+title: Writing in the Age of Ghosts
+subtitle: what I think counts as writing and what doesn't
+image: ./imgs/ghosts.png
+content: Language, in my opinion, is the greatest human invention. When you think of it, we are nothing short of sorcerers who spent millennia crafting and perfecting and destroying and reconstructing an elaborated yet minutiae system of seemingly telepathic runes that allows us to communicate with clarity anything across theoretically any working pairs of eyes or ears or hands, from our deepest, most primal desires, to a four-item shopping list that we cannot for our life commit into memory. But precisely for its conjuring power that an important aspect of language, writing—deep, reflective, serious writing, that is—becomes so notoriously onerous to master that people have been hiring ghosts to do it for them since time immemorial.
+Writing itself is a two-part process: distilling your amorphous sentiments into concrete ideas or imagery, then materializing them through an appropriate combination of semantic units and rhetoric devices. Most people (including me), are better at one thing than another. Some have wondrous imaginations but struggle with financial needs, consumer demands, or even worse, the ability to weave that imagination into coherent sentences; others pride themselves in technicality but are either cash-strapped or die-hard fans, or simply in a constant state of writer’s block. Naturally, ghostwriting emerges from this dynamic, with the two sides entwined in a sort of artistic symbiosis that usually guarantees a good outcome for both.
+Could this bisection of the creative process produce enjoyable pieces of work? Certainly. Tom Clancy, Donald Trump, Pope Pius XII, you prompting a ChatGPT wrapper to pen smutty fantasies, we should have at least once reaped some benefits from this cooperation before. But does it constitute what I regard as real writing, the kind that sprouts between your ears and blooms at your fingertips? Probably not.
+You see, to me, good writing is not necessarily real writing. When you divide into multiple parts an inherently monolithic process, then hand each of those parts to different people, the resultant jigsaw is going to have some holes in it. Not in the quality of work, obviously—since good ghostwriting is almost indistinguishable from the real thing—but in the bridging of the gaps between imagination and actualization. As powerful a tool as it is, language is imperfect; it neither affords us psychic powers nor reflects our inner turmoils exactly as they are. Even knowing and describing what you want to write to others is itself another painstaking process of imagining and actualizing.
+Hence the problem of one’s descriptive and the other’s comprehension ability mutating an original thought by adding three extra steps to an already imperfect system: instead of I think – I write, it becomes I think – I speak – You listen – You think – You write. Adding to that the final steps of Reader reads – Reader understands, and see through how many lenses that thought has passed. It is a telephone game, where on the way to its destination, the proverbial Theseus’s Ship of the initial message has its planks replaced for every receiver whose ears it sails through; will the same ship come out of the final one’s mouth?
+“But,” you may object, “if I can enjoy what I read, then who cares how it is made?” As a somewhat consequentialist myself, it is indeed hard at first to lead an ends-oriented mindset to believe that the means matter. Nonetheless, consider this second point I put forward: real writing is an art. Art, the way I see it, lies not in the painting, the statue, the play, or the song; it lies in the wish of a rational being to express and reconcile with its internal state, and if possible, to connect with other rational beings who share that state. In other words, the end of art is the self, first and foremost. If we go along the lines of “the end justifies the mean,” then every part of art naturally must contribute to the enrichment of the self. For writing, ideation is acknowledging how dangerous unresolved inner turmoil is to an affectionate and tender soul, and composition is mustering enough courage to confront and bring to daylight even the ugliest aspects of it. Deferring any of these two steps, therefore, means those virtues of yours will never get trained, which goes against the premise. And if you prefer Kantism, then “Devotest thyself to thy art to beautify thy soul” sounds quite a decent categorical imperative, no?
+Does this imply that mangakas cannot hire assistants, or commissioned works are to be frowned upon? Far from it: time and financial constraints often mar this beautiful vision of a solitary quest for art. But when they do not, which is often the case for most of us when we decide to tap into our creative side, we should to our best complete both ends of the writing process, for they are as equally important to each other as to the reason why we took up writing in the first place. How well you do it is merely a matter of time and grit. Here is a quote from Meditations by Marcus Aurelius that I find fitting: “Don't be disgusted, don't give up, don't be impatient if you do not carry out entirely conduct based in every detail upon right principles; but after a fall return again, and rejoice if most of your actions are worthier of human character." It sounds a little grand because he was talking about practicing philosophy, but I think this applies as well to any pursuit that refines the soul.
+It is here that I would like to make my third and final point: since they are different things, real writing need not be good, and vice versa. If you consider writing an art, you will write simply for the sake of matching as much as possible the ink on the paper or the pixels on the screen to the electrical impulses inside the head. Writing then is but a voiceless soliloquy, where public reception, financial successes, peer pressure, all that which belongs not to the stage but to the audience is simply irrelevant. If you consider writing an art, you will know that despite the multitude of cheats to the process out there, you choose instead to toil, to participate in “revealing yourself in excess,” as Kafka put it, in the vain hope that from such exhibitionism might, just might, your creation be an acceptable mirror of your passion. If you consider writing an art, you should acknowledge that outsourcing the task of actualization even to the most skillful wordsmith or potent machine is a stopgap measure, resorted to because you lack the ability to do so yourself at the moment, and that you alone understand what actual essence dwells within and how best to present it to the world.
+Real writing can be imperfect, or rather, it must be, since mortals are its makers and enjoyers. Look at Berserk and The Pale King, whose authors tragically passed away before they could be completed; do we avoid them just because they lack a proper conclusion? Look at the one-page adventure story your toddler took a whole week to commit to paper; do we denounce it because it is riddled with grammatical errors and happily resolves with a deus ex machina inspired by his favorite anime protagonist? Good writing, on the other hand, can be soulless, when objects assume the role of either the commissioner or the implementor, or both. In one case, when writing is dictated by algorithms, grades, audience, sales, it ceases to carry its original meaning; the human has acquiesced to the role of the ghost. What results can aptly be called a product, whose selling features are banal imageries and trifling rhymes anyone with a hint of reason can catch after a second of disengagement from what they are doing. In the latter, digital ghosts, or LLMs, as they are commonly known, lack even the basic faculties required for artistic expression; they chomp down whatever you give them and from their gurgling guts of tokenized emotions regurgitate an according mass of characters, engineered to excessive torpidity and non-offensiveness, that they deem an appropriate response. What then could be said of chatbots writing for page ranking? In the end, revealed to the senses is an unctuous theater mask behind which lies a faint impression, if any at all, of a human face, its contour polished but uncanny, its material sturdy but plastic, its substance none but existent. Again, would you prefer this over a child’s wacky writing? I will not.
+Ghostwriting is not a new thing, but in a way, it has been revolutionized since we entered what I like to call an “age of ghosts”, where writing can be reduced to prompting and copy-pasting and done en masse, so conveniently, in fact, that it hardly feels like you are doing anything worthwhile. Virtual phantoms encroach on territories once regarded as exclusively human—art, churning out knock-off collections of strings on command. It is thus a more crucial and opportunistic time than ever for those who love writing, having realized its necessity, to recognize the integrity of the process and be both the director and actor of their work.
+In his essay “Welcome to the semantic apocalypse,” author and neuroscientist Erik Hoel wrote about an OpenAI writing bot stealing the phrase “democracy of ghosts” from Vladimir Nabokov, which I find ironic and funny. If relinquishing part of writing turns out to be a habit rather than a final recourse, nothing will happen right away, of course. Society will not just immediately tumble down a slippery slope to become an artless dystopia. Yet, albeit imperceptibly, changes do happen; with each passing day, literature becomes a bit less exciting, authors become a bit more content with their word choices, readers become a bit less immunized to slop, and everyone feels their soul a bit more carved-out. Fast forward a few centuries, when humanity look at its corpus and itself, perhaps it would muse the same thing as the writing bot did: “I am nothing if not a democracy of ghosts.”
