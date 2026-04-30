@@ -1,18 +1,20 @@
-const SUBSTACK_NAME = "yourname"; // Replace with your actual Substack publication name
+
 const categories = ["fiction", "nonfiction", "poetry", "feature"];
 const navToFileMap = {
     fiction: "fiction",
-    "non-fiction": "nonfiction",
+    nonfiction: "nonfiction",
     poetry: "poetry",
-    features: "feature",
+    feature: "feature",
 };
 
 const postsByCategory = {};
 let allPosts = [];
 let activePosts = [];
 
+// Substack integration removed — no external loading.
+
 function getPostImage(post) {
-    return post?.image ?? post?.banner ?? post?.img ?? post?.cover ?? "";
+    return post?.image ?? post?.img ?? "";
 }
 
 function normalizePosts(payload, category) {
@@ -50,25 +52,25 @@ async function loadCategory(category) {
 
 async function loadAllPosts() {
     // 1. Fetch local JSON files and Substack data simultaneously
-    const [localFetches, substackPosts] = await Promise.all([
-        Promise.all(categories.map((category) => loadCategory(category))),
-        loadSubstackPosts()
-    ]);
+        // 1. Fetch local JSON files
+        const localFetches = await Promise.all(categories.map((category) => loadCategory(category)));
 
     // 2. Map local files to their categories
-    categories.forEach((category, index) => {
-        postsByCategory[category] = localFetches[index];
-    });
-
-    // 3. Merge Substack posts into the "feature" category
-    if (substackPosts.length > 0) {
-        postsByCategory['feature'] = [...(postsByCategory['feature'] || []), ...substackPosts];
-    }
+        categories.forEach((category, index) => postsByCategory[category] = localFetches[index]);
 
     // 4. Flatten all posts into the global array and initialize view
-    allPosts = [...localFetches.flat(), ...substackPosts];
+        allPosts = localFetches.flat();
     activePosts = postsByCategory.fiction ?? [];
     renderSelector(activePosts);
+    // expose posts for easier debugging in the browser console
+    try {
+        window.debugPosts = allPosts;
+    } catch (e) {
+        // window may be undefined in some test environments
+    }
+    // ensure the selector view is shown by default
+    document.querySelector('#post-reader')?.classList.add('hidden');
+    document.querySelector('#post-selector')?.classList.remove('hidden');
 }
 
 function renderSelector(posts) {

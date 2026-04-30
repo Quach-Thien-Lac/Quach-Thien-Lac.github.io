@@ -30,7 +30,12 @@ function convertTxtToJson() {
 
         // rest is content
         const contentLines = allLines.slice(firstIndex + 4);
-        const content = contentLines.join('\n').trim();
+		// formatting shit
+        let content = contentLines.join('\n').trim();
+		content = content.replaceAll('\n', '\n\n');
+		content	 = content.replaceAll('\t', ''); 
+		content	 = content.replace('content: ', ''); 
+		
         myObject['content'] = content;
         myObject['createdAt'] = new Date().toISOString();
 
@@ -41,21 +46,64 @@ function convertTxtToJson() {
         const safeCategory = category.replace(/[\/\\?%*:|"<>]/g, '-').trim();
         const archiveFile = path.join(archiveDir, `${safeCategory}.json`);
 
-        let archiveData = [];
+        // Helper: create a URL-safe slug from a title
+        function slugify(str) {
+            return String(str || '')
+                .trim()
+                .toLowerCase()
+                .replace(/\s+/g, '-')
+                .replace(/[\/\\?%*:|"<>#]/g, '-')
+                .replace(/[^\w\-\u00C0-\u024F]+/g, '')
+                .replace(/-+/g, '-')
+                .replace(/^-|-$/g, '');
+        }
+
+        function getTitleKey(obj) {
+            if (!obj) return '';
+            if (obj.title) return obj.title;
+            if (obj.Title) return obj.Title;
+            if (obj.name) return obj.name;
+            if (obj.slug) return obj.slug;
+            return '';
+        }
+
+        // Read existing archive file and normalize to an object keyed by slug
+        let archiveObj = {};
         if (fs.existsSync(archiveFile)) {
             try {
-                const existing = fs.readFileSync(archiveFile, 'utf8');
-                archiveData = JSON.parse(existing);
-                if (!Array.isArray(archiveData)) archiveData = [archiveData];
+                const existing = fs.readFileSync(archiveFile, 'utf8').trim();
+                if (existing) {
+                    const parsed = JSON.parse(existing);
+                    if (Array.isArray(parsed)) {
+                        parsed.forEach((p) => {
+                            const key = slugify(getTitleKey(p) || p.id || p.createdAt || JSON.stringify(p).slice(0, 20));
+                            archiveObj[key || Date.now().toString()] = p;
+                        });
+                    } else if (typeof parsed === 'object' && parsed !== null) {
+                        archiveObj = parsed;
+                    }
+                }
             } catch (e) {
-                archiveData = [];
+                archiveObj = {};
             }
         }
 
-        archiveData.push(myObject);
+        // Determine key for new post
+        const rawTitle = getTitleKey(myObject) || myObject.title || myObject.name || '';
+        let key = slugify(rawTitle || myObject.createdAt || Date.now());
 
-        fs.writeFileSync(archiveFile, JSON.stringify(archiveData, null, 2), 'utf8');
-        console.log(`Appended post to ${archiveFile}`);
+        // Ensure unique key: append suffix if collision
+        if (archiveObj[key]) {
+            let i = 1;
+            while (archiveObj[`${key}-${i}`]) i += 1;
+            key = `${key}-${i}`;
+        }
+
+        myObject.id = key;
+        archiveObj[key] = myObject;
+
+        fs.writeFileSync(archiveFile, JSON.stringify(archiveObj, null, 2), 'utf8');
+        console.log(`Wrote post under key '${key}' to ${archiveFile}`);
     } catch (err) {
         console.error('Error converting txt to json:', err.message || err);
     }
