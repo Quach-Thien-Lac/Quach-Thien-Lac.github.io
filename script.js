@@ -14,7 +14,7 @@ let activePosts = [];
 // Substack integration removed — no external loading.
 
 function getPostImage(post) {
-    return post?.image ?? post?.img ?? "";
+    return post?.image ?? post?.banner ?? post?.img ?? post?.cover ?? "";
 }
 
 function normalizePosts(payload, category) {
@@ -44,31 +44,29 @@ async function loadCategory(category) {
             category: post.category ?? category,
             id: post.id ?? `${category}-${index}`,
         }));
-    } catch {
-        console.error(`Failed to load category: ${category}`);
-        return []; 
+    } catch (error) {
+        console.error(`Failed to load category: ${category}`, error);
+        return [];
     }
 }
 
 async function loadAllPosts() {
-    // 1. Fetch local JSON files and Substack data simultaneously
-        // 1. Fetch local JSON files
-        const localFetches = await Promise.all(categories.map((category) => loadCategory(category)));
+    const localFetches = await Promise.all(categories.map((category) => loadCategory(category)));
 
-    // 2. Map local files to their categories
-        categories.forEach((category, index) => postsByCategory[category] = localFetches[index]);
+    categories.forEach((category, index) => {
+        postsByCategory[category] = localFetches[index];
+    });
 
-    // 4. Flatten all posts into the global array and initialize view
-        allPosts = localFetches.flat();
-    activePosts = postsByCategory.fiction ?? [];
+    allPosts = localFetches.flat();
+    activePosts = postsByCategory.fiction?.length ? postsByCategory.fiction : allPosts;
     renderSelector(activePosts);
-    // expose posts for easier debugging in the browser console
+
     try {
         window.debugPosts = allPosts;
     } catch (e) {
         // window may be undefined in some test environments
     }
-    // ensure the selector view is shown by default
+
     document.querySelector('#post-reader')?.classList.add('hidden');
     document.querySelector('#post-selector')?.classList.remove('hidden');
 }
@@ -84,8 +82,8 @@ function renderSelector(posts) {
 function renderHero(post) {
     const heroTitle = document.querySelector("#hero-title");
     const heroSubtitle = document.querySelector("#hero-subtitle");
-    const heroButton = document.querySelector("#hero-button");
     const heroContainer = document.querySelector("#hero-container");
+    const heroButton = heroContainer?.querySelector(".read-more-button");
 
     if (!heroTitle || !heroSubtitle || !heroButton || !heroContainer) return;
 
@@ -94,6 +92,7 @@ function renderHero(post) {
         heroSubtitle.textContent = "Write something now!";
         heroButton.classList.add("hidden");
         heroButton.removeAttribute("data-post-id");
+        heroButton.textContent = "Read more";
         heroContainer.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55))";
         return;
     }
@@ -102,6 +101,7 @@ function renderHero(post) {
     heroSubtitle.textContent = post.subtitle ?? "";
     heroButton.classList.remove("hidden");
     heroButton.dataset.postId = post.id;
+    heroButton.textContent = "Read more";
 
     const image = getPostImage(post);
     heroContainer.style.backgroundImage = image
@@ -111,24 +111,50 @@ function renderHero(post) {
 
 function renderGrid(posts) {
     const container = document.querySelector("#grid-container");
-    const template = document.getElementById("post-card-template");
-
-    if (!container || !template) return;
+    if (!container) return;
 
     container.innerHTML = "";
 
+    if (posts.length === 0) {
+        const emptyItem = document.createElement("div");
+        emptyItem.className = "grid-item";
+        emptyItem.innerHTML = `
+            <div id="post-image"></div>
+            <h4 id="post-title">No posts yet</h4>
+            <p id="post-subtitle">Write one now!</p>
+            <button class="read-more-button" type="button">Read More</button>
+        `;
+        container.appendChild(emptyItem);
+        return;
+    }
+
     posts.forEach((post) => {
-        const postCard = template.content.cloneNode(true);
-        postCard.querySelector(".post-card-title").textContent = post.title ?? "Untitled post";
-        postCard.querySelector(".post-card-subtitle").textContent = post.subtitle ?? "";
+        const gridItem = document.createElement("div");
+        gridItem.className = "grid-item";
 
-        const readMoreButton = postCard.querySelector(".read-more-button") ?? postCard.querySelector("#read-more-button");
-        if (readMoreButton) {
-            readMoreButton.classList.add("read-more-button");
-            readMoreButton.dataset.postId = post.id;
-        }
+        const image = document.createElement("div");
+        image.id = "post-image";
 
-        container.appendChild(postCard);
+        const titleNode = document.createElement("h4");
+        titleNode.id = "post-title";
+
+        const subtitleNode = document.createElement("p");
+        subtitleNode.id = "post-subtitle";
+
+        const readMoreButton = document.createElement("button");
+        readMoreButton.className = "read-more-button";
+        readMoreButton.type = "button";
+        readMoreButton.textContent = "Read More";
+
+        const postImage = getPostImage(post);
+        image.style.backgroundImage = postImage ? `url("${postImage}")` : "none";
+
+        titleNode.textContent = post.title ?? "Untitled post";
+        subtitleNode.textContent = post.subtitle ?? "";
+
+        gridItem.append(image, titleNode, subtitleNode, readMoreButton);
+        readMoreButton.dataset.postId = post.id;
+        container.appendChild(gridItem);
     });
 }
 
