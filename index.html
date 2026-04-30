@@ -25,25 +25,32 @@
     <main id="content">
         <!--Layout A: Post Selector-->
         <section id="post-selector">
-            <div id="hero-section">
-                <div id="hero-title">
-
-                </div>
-                <div id="hero-subtitle">
-
+            <div id="hero-container">
+                <div id = "hero-content">
+                <h3 id="hero-title"></h3>
+                <p id="hero-subtitle"></p>
+                <button id="hero-button">Read more</button>
                 </div>
             </div>
 
-            <div id="post-grid" class="grid">
-            </div>
+            <div id="grid-container" class="grid">
+                <div id="post-container" class="grid-item">
+                <div id="post-image"></div>
+                <h4 id="post-title"></h4>
+                <p  id="post-subtitle"></p>
+                </div>
             </div>
         </section>
+
         <!--Layout B: Post Reader-->
         <section id="post-reader" class="hidden">
+            <div id = "reader-container">
             <button id="back-button">Back</button>
-            <div id="post-title"></div>
-            <div id="post-subtitle"></div>
-            <div id="post-content"></div>
+            <div id="reader-image"></div>
+            <div id="reader-title"></div>
+            <div id="reader-subtitle"></div>
+            <div id="reader-content"></div>
+            </div>
         </section>
     </main>
     <template id="post-card-template">

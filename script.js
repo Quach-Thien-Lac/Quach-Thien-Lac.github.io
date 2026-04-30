@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// helper function to open the reader view and load the post content
 function openReader(postId) {
     const post = allPosts.find(p => p.id === postId);
 
