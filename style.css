@@ -1,0 +1,52 @@
+:root {
+    --bg-color: #111111;
+    --text-color: #ffffff;
+    --accent-color: #ff6347;
+    --font-family: 'Georgia', serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: inherit;
+}
+
+.navbar {
+    display: flex;              
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 2rem;
+    height: 60px;
+    background-color: var(--bg-nav);
+    position: sticky;      
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--border);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: left;
+    background-color: #111111;
+    padding: 0 2rem;
+}
+
