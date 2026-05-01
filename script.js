@@ -2,7 +2,7 @@
 const categories = ["fiction", "nonfiction", "poetry", "feature"];
 const navToFileMap = {
     fiction: "fiction",
-    nonfiction: "nonfiction",
+    "non-fiction": "nonfiction",
     poetry: "poetry",
     feature: "feature",
 };
