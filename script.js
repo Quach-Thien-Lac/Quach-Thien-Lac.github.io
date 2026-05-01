@@ -1,11 +1,4 @@
-
-const categories = ["fiction", "nonfiction", "poetry", "feature"];
-const navToFileMap = {
-    fiction: "fiction",
-    "non-fiction": "nonfiction",
-    poetry: "poetry",
-    feature: "feature",
-};
+const categories = ["fiction", "non-fiction", "poetry", "feature"];
 
 const postsByCategory = {};
 let allPosts = [];
@@ -186,13 +179,8 @@ function openReader(postId) {
 }
 
 function showSelectorForCategory(navCategory) {
-    const fileCategory = navToFileMap[navCategory] ?? "fiction";
-
-    if (navCategory === 'features' || navCategory === 'archive' || navCategory === 'all') {
-        activePosts = allPosts ?? [];
-    } else {
-        activePosts = postsByCategory[fileCategory] ?? [];
-    }
+    const fileCategory = categories.includes(navCategory) ? navCategory : "fiction";
+    activePosts = postsByCategory[fileCategory] ?? [];
 
     renderSelector(activePosts);
 
