@@ -2,9 +2,16 @@
     --bg-color: #111111;
     --text-color: #ffffff;
     --accent-color: #ff6347;
-    --font-family: 'Georgia', 'Times New Roman', serif;
     --font-primary: 'Playfair Display', serif;
     --font-secondary: 'Georgia', serif;
+    --font-size-title: 3rem;
+    --font-size-subtitle: 1.2rem;
+    --font-size-content: 1.5rem;
+    --font-size-body: 1.25rem;
+    --font-size-small: 1rem;
+    --font-size-display: 2.5rem;
+    --font-size-hero-min: 2rem;
+    --font-size-hero-max: 3.5rem;
     --bg-nav: #222222;
     --bg-post: #222222;
 }
@@ -15,7 +22,7 @@ body {
     font-family: var(--font-family);
     align-items: center;
     margin: 0;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 * {
@@ -25,8 +32,8 @@ body {
 }
 
 h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
+    font-size: var(--font-size-title);
+    margin-bottom: 1.25rem;
     color: inherit;
 }
 
@@ -35,17 +42,17 @@ p {
 }
 
 p + p {
-    margin-top: 3em;
+    margin-top: 3rem;
 }
 
 #navbar {
-    display: flex;              
+    display: flex;            
     align-items: center;
     justify-content: center; 
     padding: 0 2rem;
-    height: 60px;
+    height: 3.75rem;
     background-color: var(--bg-nav);
-    position: sticky;      
+    position: static;      
     top: 0;
     z-index: 100;
     border-bottom: 1px solid var(--border);
@@ -58,9 +65,8 @@ p + p {
     gap: 2rem;
     color: var(--text-color);
     text-decoration: none;
-    font-size: 1.25em;
+    font-size: var(--font-size-body);
     transition: color 0.3s ease;
-    -webkit-tap-highlight-color: transparent;
     user-select: none;
     
 }
@@ -84,7 +90,7 @@ p + p {
 
 .nav-item a:hover {
     color: var(--accent-color);
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 #hero-container {
@@ -92,10 +98,10 @@ p + p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 
 
-    width: 1000px;
+    width: 62.5rem;
     height: 50vh;
     margin-top: 2.5rem;
     margin-bottom: 4rem;
@@ -123,20 +129,20 @@ p + p {
     object-fit: cover;
     object-position: center;
     overflow: hidden;
-    filter: brightness(0.5);
-    border-radius: 8px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    border-radius: 0.5rem;
 }
 
 
 #hero-title {
-    font-size: 3em;
+    font-size: var(--font-size-title);
     font-family: var(--font-primary);
     margin-bottom: 0.5rem;
     align-self:  left;
 }
 
 #hero-subtitle {
-    font-size: 1.2em;
+    font-size: var(--font-size-subtitle);
     margin-bottom: 1rem;
     font-family: var(--font-secondary);
     font-style: italic;
@@ -144,8 +150,8 @@ p + p {
 }
 
 #hero-content {
-    font-size: clamp(2em, 2vw, 3.5em);
-    max-width: 600px;
+    font-size: clamp(var(--font-size-hero-min), 2vw, var(--font-size-hero-max));
+    max-width: 37.5rem;
 }
 
 
@@ -154,18 +160,18 @@ p + p {
     color: var(--accent-color);
     border: 2px solid var(--accent-color);
 
-    width: 150px;
-    padding: 8px 8px;
+    width: 9.375rem;
+    padding: 0.5rem 0.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    gap: 20px;
+    gap: 1.25rem;
 
-    font-size: 1em;
+    font-size: var(--font-size-small);
     font-family: var(--font-secondary);
 
     cursor: pointer;
-    transition: all 0.3s ease;    
-    border-radius: 4px;
+    transition: color 0.3s ease;    
+    border-radius: 0.25rem;
 
 }
 
@@ -187,10 +193,10 @@ p + p {
     align-items: start;
     justify-content: center;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px;
-    width: min(1000px, 100%);
-    margin: 40px auto;
-    padding: 0 20px;
+    gap: 1.5rem;
+    width: min(62.5rem, 100%);
+    margin: 2.5rem auto;
+    padding: 0 1.25rem;
 }
 
 .grid-item {
@@ -199,9 +205,9 @@ p + p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     width: 100%;
     height: 100%;
@@ -209,13 +215,13 @@ p + p {
 }
 
 .grid-item:hover {
-    transform: translateY(-4px); /* Slight lift */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-0.25rem); /* Slight lift */
+    box-shadow: 0 0.5rem 0.9375rem rgba(0, 0, 0, 0.1);
 }
 
 #post-container:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.3);
 }
 
 #post-image {
@@ -225,19 +231,19 @@ p + p {
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 #post-title {
-    font-size: 1.5em;
-    margin: 10px;
+    font-size: var(--font-size-content);
+    margin: 0.625rem;
     font-family: var(--font-primary);
     font-weight: bold;
 }
 
 #post-subtitle {
-    font-size: 1em;
-    margin: 0 10px 10px 10px;
+    font-size: var(--font-size-small);
+    margin: 0 0.625rem 0.625rem 0.625rem;
     font-family: var(--font-secondary);
     font-style: italic;
 }
@@ -245,8 +251,8 @@ p + p {
 #reader-container {
     background-color: transparent;
 
-    padding: 20px;
-    border-radius: 8px;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
     gap: 1rem;
     margin-top: 2.5rem;
     margin-bottom: 4rem;
@@ -254,9 +260,9 @@ p + p {
     margin-right: auto;
 
     width: 100%;
-    max-width: 1200px;
+    max-width: 75rem;
     
-    display: block flow;
+    display: block;
 }
 
 #reader-image {
@@ -264,13 +270,13 @@ p + p {
     height: 100vh;
     margin-top: 2rem;
     margin-bottom: 4rem;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     display: block;
     object-fit: contain;
 }
 
 #reader-title {
-    font-size: 2.5em;
+    font-size: var(--font-size-display);
     font-weight: bold;
     margin-bottom: 0.5rem;
     font-family: var(--font-primary);
@@ -278,7 +284,7 @@ p + p {
 }
 
 #reader-subtitle {
-    font-size: 1.25em;
+    font-size: var(--font-size-body);
     margin-bottom: 1rem;
     font-family: var(--font-secondary);
     font-style: italic;
@@ -286,7 +292,7 @@ p + p {
 }
 
 #reader-content {
-    font-size: 1.25em;
+    font-size: var(--font-size-body);
     line-height: 2;
     font-family: var(--font-secondary);
     white-space: pre-wrap;
