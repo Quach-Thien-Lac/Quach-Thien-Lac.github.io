@@ -137,7 +137,8 @@ p + p {
     font-size: var(--font-size-title);
     font-family: var(--font-primary);
     margin-bottom: 0.5rem;
-    align-self:  left;
+    align-self:  center;
+    text-align: center;
 }
 
 #hero-subtitle {
@@ -145,12 +146,14 @@ p + p {
     margin-bottom: 1rem;
     font-family: var(--font-secondary);
     font-style: italic;
-    align-self:  left;
+    align-self:  center;
+    text-align: center;
 }
 
 #hero-content {
     font-size: clamp(var(--font-size-hero-min), 2vw, var(--font-size-hero-max));
     max-width: 37.5rem;
+    text-align: center;
 }
 
 
@@ -296,7 +299,7 @@ p + p {
     gap: 1.5rem;
 }
 
-#post-reader.poetry #reader-content {
+#post-reader.poetry, #post-reader.feature {
     text-align: center;
 }
 

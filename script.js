@@ -174,9 +174,10 @@ function openReader(postId) {
     
     if (readerContent) readerContent.innerHTML = post.content ?? "";
     
-    // special rule for centering poems
+    // special rule for centering poems and features
     if (postReader) {
         postReader.classList.toggle("poetry", post.category === "poetry");
+        postReader.classList.toggle("feature", post.category === "feature");
     }
 
     document.querySelector("#post-selector")?.classList.add("hidden");
