@@ -1,226 +1,64 @@
 feature
-title: Đói thơ (feat. Nhung Mật & Sáo Rỗng)
+title: Đói câu (feat. Văn Lâu)
 subtitle: 
-image: ./imgs/đói thơ.png
-content: Điệu múa gọi Xuân về
-<i>Sáo Rỗng</i>
+image: ./imgs/đói câu.png
+content: Lâu: Mây giăng bịt cái giăng trăng trắng
+Binh: Gió vận xua cái vận đen đen
+1-2/2/23
 
-Nắng sớm bông đùa hôn lên má
-Ấp úng bẽn lẽn bóng ai nhoà
-Áo dài tà mỏng ngỡ mây bay
-Lấp ló nụ cười, mặt tưởng hoa
-Khẽ trên nền gạch nhịp thước tha
-Gió vịn đôi tay, điệu chan hoà
-Ôi con tim căng trào nhựa sống
-Để con sóng xuân cuốn trôi ta
+B: Bỏ cỗ to to, đi cày cũng vì quan tiền nho nhỏ
+L: Trau tài khéo khéo, lo ngại gì đến chút chuyện cỏn con
+2/2/23
 
-29/9/22
+L: Cậu Thái tử ngồi trên gác tía
+B: Mợ Thượng hoàng trấn sau rèm vàng
+3/2/23
 
-Điêu tàn
-<i>Trùng Binh</i>
+B: Phận trâu chó, duyên tro trấu, duyên phận rốt cuộc cũng là trầu không cho
+L: Mồi chén mâm, chuyện chấm men, mồi chuyện lần đầu chắc mẩm còn chẽn
+3-5/2/23
 
-Xuân ơi! Ở đó với mai vàng,
-Chớ thấy người mời đã vội sang.
-Đến khóc đàn ve sầu bạc cánh,
-Lại khinh lũ nắng cợt hồng nhan.
-Mưa xuyên áo mỏng, mây còn trút,
-Gió táp tay mềm, điệu hết vang.
-Cốt để tim nàng đừng hóa đá,
-Xin Thu hãy gột trước Điêu Tàn.
+B: Nhất quá tam, tình tứ sao bằng đàn nhị
+L: Bách vong Triệu, ti tỉ chẳng hết văn thiên
+6/2/23
 
-30/9/22
+L: Cỏ xanh rì, mọc bên rào, đưa theo gió thổi rì rào
+B: Máu đỏ hồng, chảy thành sông, pha vào nước nhuộm sông Hồng
+L: Xương trắng bạch, xây thành núi, chất xuống đồng so núi Bạch
+10/2-5/4/23
 
----------------
+L: Thằng Tôm đánh con ba tép, miệng nghêu ngao để cua con ghẹ
+B: Cái Tép cá hết bầu cua, mặt kênh kiệu chẳng bắt con cọp
+16/4/23
 
-Ra đối
-<i>Nhung Mật</i>
+L: Viết truyện vài dòng dài dòng mà dông dài.
+B: Nghĩ thơ mấy khổ thấy khổ lại khổ thây.
+-•-
+B: San rừng vào hang bắt cọp cho dễ.
+L: Tát nước xuống suối lùi chồn cho vui.
+18/4/23
 
-Thú chơi thói tục những ngày này
-Đông Hồ mấy cảnh hóa ngay đây 
-Chợ đông những sớm người sum họp 
-Nhà rực bao đêm pháo nổ bay 
-Cây cỏ phô tàu xanh biếc biếc 
-Hoa hòe trổ cánh đỏ hây hây 
-Soạn in ít chữ mà tâm nhọc 
-Đố kẻ chung bàn: "Đối sao đây?"
+L: Dưới mái trường, bên cái trống, cá trống đớp cá mái
+B: Nhân trống trải, trong thang máy, chim mái vờn chim trống
+19/4/23
 
-10/10/22
+B: Được chó lại đi đòi bò, bụng người đói thịt chẳng no bao giờ.
+L: Có bướm rồi lại muốn chim, miệng người bay bổng không im ngày nào.
+20/4/23
 
+L: Trời nóng hầm hập, thằng hâm đào hầm ngồi hâm cháo hẩm.
+B: Tiết thu âm ẩm, cậu ấm - tri âm mặc ấm đối ẩm.
+21/4/23
 
-Ừ thì Tết
-<i>Trùng Binh</i>
+B: Tấm têm trầu có tâm, vua khen Tấm có tầm.
+L: Kiều chịu kiếp không kiệu, tướng triệu, Kiều không kiếu!
+10-13/7/23
 
-Cưỡi ngựa xem hoa cái tháng hai,
-Long Xuyên cảnh đẹp lại lai rai.
-Giao thừa mất điện, trời hiu quạnh
-Mùng một đầy vong, đất mệt nhoài.
-Lũ cúc trong vườn tàn điệp điệp,
-Bọn mai giữa chợ ế dài dài.
-Đương vời vợi ý thì thơ hết,
-Đáp kẻ ngồi bên: "Tết thật hài!"
+L: Thạch Sanh đánh đàn tiếng thanh tiếng sạch
+B: Tam Tứ đi buôn, người tư, người tám
+13-15/7/23
 
-10-11/10/22
-
----------------
-
-Đưa Táo về Trời
-<i>Nhung Mật</i>
-
-Bập bùng khói Chạp lửa hăm ba
-Tiết tiễn hai ông với một bà
-Một nhúm than hồng tanh tách nhảy
-Đầy trời cá chép vẫy vùng qua
-Dâng thư tấu sự về thiên phủ
-Quản hỉ coi sung ở mọi nhà
-Nặng mối duyên tình thương thế tục
-Xong tuần lại rước Tết cùng ta
-
-Rước Chạp vào thân
-<i>Trùng Binh</i>
-
-Âm thầm lửa Chạp khói trầm kha,
-Tết hóa áo Ông với mão Bà.
-Một nắm tiền thành ti tí phước
-Vài con chép quẫy, mỉa mai tà.
-Mấy khi được lánh phiền trên lớp 
-Đến dịp thì vương nhiễu tại gia.
-Nhọc cái lu bu, nhằn cái tục,
-Sang năm lại tiễn Tết mình ta.
-
-24/10/22
-
----------------
-
-Ông Trăng
-<i>Nhung Mật</i>
-
-Lạy thỉnh ông trăng xuống chốn này!
-Tình đâu tình cứ biến theo mây.
-Chén duyên chửa rót rơi thành vụn,
-Tơ mệnh đang xe đứt quách dây.
-Rạch dải Ngân Hà bằng kẹp tóc,
-Lấy tâm Bắc Đẩu vận bàn quay.
-Tình sinh tình chết ôi đành chịu.
-Cũng đợi chờ ai ngó xuống đây…
-
-10/9/22
-
-Hằng
-<i>Trùng Binh</i>
-
-Khốn thay cái phận kẻ hèn này,
-Sợ ướt nên nào dám đuổi mây.
-Cần bóng trăng tà hàn sáo trúc
-Độc cầm muốn ánh nguyệt se dây,
-Thế mà cát trắng không đầy bể,
-Dẫu vậy, tơ vàng chẳng đủ quay.
-Khốn thật, kẻ nằm chờ gió thổi
-Cầu Hằng chớ ló dạng nơi đây.
-
-Tự trào, 9-10/11/22
-
----------------
-
-Vịnh cái chùa hoang
-<i>Nhung Mật</i>
-
- Một mình nghe tiếng cú chiều kêu.
-Khắc khoải khen Trời khéo biết trêu!
-Đỉnh tháp vong hoài tầng đỏ bụi,
-Chân tường phó mặc lớp xanh rêu.
-Kinh vàng khắc cột chim muông nhại,
-Tượng đá sơn son cỏ nấm bêu.
-Khách vãng lai nào đâu hết cả?
-Chỉ còn nỗi lặng thú rừng trêu…
-
-25/11/22
-
-Vịnh lại cái chùa 
-<i>Trùng Binh/i>
-
-Thăm thẳm rừng già, cú bỗng kêu
-Dăm cơn gió bấc thổi như trêu!
-Trước thì hạn hán, sân đóng bụi,
-Sau hứng mưa rào, mái phủ rêu.
-Ô nha lượn lờ buồn mỏ giễu,
-Văn khách lai vãng họa thơ bêu.
-Chẳng sao, miễn tượng thần còn vững,
-Xin gửi cho Trời mấy tiếng trêu.
-
-27-28/1/23
-
----------------
-
-ngọ
-<i>Trùng Binh</i>
-
-năm gian cất gọn giữa tường hồng
-mặt trước phù điêu chú ngựa lồng
-ưỡn cật khua mồm, tên trưởng bối
-khom lưng múa mép, đứa nhi đồng
-vòng tay cứ rặn vài câu chúc
-lỗ nhĩ như rằng sẽ đả thông
-tuấn mã không coi, coi đến tệ
-nhà tranh cũng muốn chút thuần phong
-
-27/2/26
-
-vô đề 
-
-Kim cổ nào ai chẳng muốn “hồng” 
-Bày ra giấy bạc lấy bao lồng 
-Cắn răng trích túi thành quân tử 
-Nhàu óc ra thơ đúng tiểu đồng 
-Lễ nghĩa đợi chi tuồng phú quý 
-Chân thành mong đặng buổi hanh thông 
-Dẫu soi đến giấy hồng hay bạc 
-Lộc đến ai mà chẳng thuận phong
-
-11/3/2026
-
----------------
-
-Luyện chữ buổi đêm
-
-Đêm nằm tơ tưởng những đông tây,
-Nổi hứng bày chơi một thú này:
-Tấm lót phơi ra dường xáo xác,
-Cây đồ nắm lại khẽ lung lay,
-Mồ hôi đổ xuống, lem luôn ức,
-Gân guốc phù lên, mỏi cả tay.
-Ẩu quá văng xa vài ba giọt,
-Lau rồi cất gọn kẻo mẹ hay.
-
-12/4/26
-
-làm vườn ban sáng
-
-Thú tục xưa giờ muốn thật hay,
-Phàm rằng phải nhọc tới chân tay.
-Đào vườn cắm cải, không nên cạn
-Đóng cọc nuôi bầu, chớ nên lay!
-Hán đẩy xe bò qua sáu suối,
-Lại mang suốt chín núi đôi cày.
-Không vì chút nhọc mà than khó,
-Thú tục sau nhà, ngược hướng Tây.
-
-21/4/26 
-
----------------
-
-ai?
-
-Hoàng sa, xích tuyến tạo huyền nhân
-Bí thuật, lôi năng yểm vạn tầng
-Võ Thất tinh thông, bày kế quỷ
-Làu làu Ngũ, Tứ, lập mưu thần
-Vào tay Kiệt, Trụ, vong cơ nghiệp
-Dâng Nghiêu, Thuấn dụng, tích đại ân
-Được mất hơn thua tùy kẻ chủ
-Nê thần vẫn kém trí minh quân.
-
-25/4/26
-
-
-(still waiting for a response)
+B: Minh Trị qua cầu Duy Tân. 
+L: Thiên Lạc xuống lũng Tuyệt Tình.
+25/7/23
 
