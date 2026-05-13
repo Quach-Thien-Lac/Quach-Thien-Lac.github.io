@@ -21,19 +21,32 @@ function convertTxtToJson() {
         const myObject = { category };
 
         metaLines.forEach((line) => {
-            if (!line || !line.includes(':')) return;
+            if (!line || !line.includes(':')) {
+                console.error('Invalid metadata format: missing colon at', line);
+                return;
+            };
             const [key, ...valueParts] = line.split(':');
-            const cleanKey = key.trim();
+            const cleanKey = key.trim().toLowerCase();
             const cleanValue = valueParts.join(':').trim();
             if (cleanKey && cleanValue) myObject[cleanKey] = cleanValue;
         });
 
+        // handling edge case where user accidentally writes nonfiction instead of non-fiction 
+        if (myObject.category.toLowerCase() === 'nonfiction') {
+            myObject.category = 'non-fiction';
+        }
         // rest is content
         const contentLines = allLines.slice(firstIndex + 4);
-		// formatting shit
+        // formatting rules: join lines, turn newlines to line breaks, remove indents, turn [.*] into superscript
         let content = contentLines.join('\n').trim();
-		content = content.replaceAll('\n', '\n\n');
+        const categoryKey = (myObject.category || '').toLowerCase();
+        if (categoryKey !== 'poetry' && categoryKey !== 'feature') {
+            content = content.replaceAll('\n', '\n\n');
+        }
 		content	 = content.replaceAll('\t', ''); 
+        content = content.replaceAll(/\[(\d+)\]/g, '<sup>$1</sup>');
+
+        // remove the string 'content:' before pushing it to json array
 		content	 = content.replace('content: ', ''); 
 		
         myObject['content'] = content;
